@@ -1,0 +1,16 @@
+name: New entry Workflow
+
+on: push
+
+jobs:
+    first_job:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Welcome message
+          run: echo "New entry for Workflow - OTel, DB Monitor in Go"
+
+        - name: List Files
+          run: ls -l
+
+        - name: Read File
+          run: cat README.md
